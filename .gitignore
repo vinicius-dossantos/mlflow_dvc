@@ -75,14 +75,6 @@ target/
 # Jupyter NB Checkpoints
 .ipynb_checkpoints/
 
-# exclude data from source control by default
-# DVC - ignora dados reais, mas permite versionar metadados
-data/**
-
-!data/
-!data/**/*.dvc
-!data/**/.gitignore
-
 # Mac OS-specific storage files
 .DS_Store
 

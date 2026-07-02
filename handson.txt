@@ -27,3 +27,7 @@
 
         se der erro: 
             git check-ignore -v data/external/clientes.csv.dvc
+
+        O arquivo csv foi adicionado ao controle de versão do DVC, agr precisamos adicionar ao git o arquivo de metadados, que faz esse controle do DVC
+
+        git add data/external/clientes.csv.dvc

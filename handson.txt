@@ -4,9 +4,12 @@
     2. Copiar o URL depois de /folder/ ---> 19qSmBWtjo3Y_WgmG0uN8Q-wyLATmLEqh
     3. No terminal do DVC:
 
-        rm -rf .dvc                                                                                                                                                                                           ─╯
+        cd ~/Documents/GitHub/mlflow_dvc
+
+        rm -rf .dvc
         rm -f .dvcignore
-        dvc init --subdir
+        dvc init
+
         dvc remote remove storage    
         dvc remote add -d storage gdrive://19qSmBWtjo3Y_WgmG0uN8Q-wyLATmLEqh
 
@@ -17,3 +20,10 @@
         ls -la
         cd .dvc
         cat config
+
+        Já temos um csv de clientes data/external/clientes.csv 
+
+        dvc add data/external/clientes.csv  
+
+        se der erro: 
+            git check-ignore -v data/external/clientes.csv.dvc
